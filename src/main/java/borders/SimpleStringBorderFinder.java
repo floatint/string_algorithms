@@ -6,7 +6,7 @@ public class SimpleStringBorderFinder {
         int border_index = 0;
 
         // идем по строке с конца
-        for (int i = s.length() - 1; border_index == 0 && i > 0; --i){
+        for (int i = s.length() - 1; border_index == 0 && i > 0; i--){
             // пытаемся найти наибольшую границу сдвигая указатель в начале
             int j = 0;
             for (j = 0; j < i; j++){
